@@ -1,0 +1,282 @@
+(pcb /home/vagrant/projects/kicad_agent/projects/rgb_switches/rgb_switches.dsn
+  (parser
+    (string_quote ")
+    (space_in_quoted_tokens on)
+    (host_cad "KiCad's Pcbnew")
+    (host_version "9.0.2+dfsg-1")
+  )
+  (resolution um 10)
+  (unit um)
+  (structure
+    (layer F.Cu
+      (type signal)
+      (property
+        (index 0)
+      )
+    )
+    (layer B.Cu
+      (type signal)
+      (property
+        (index 1)
+      )
+    )
+    (boundary
+      (path pcb 0  85000 -60000  0 -60000  0 0  85000 0  85000 -60000)
+    )
+    (via "Via[0-1]_600:300_um")
+    (rule
+      (width 200)
+      (clearance 200)
+      (clearance 50 (type smd_smd))
+    )
+  )
+  (placement
+    (component Capacitor_SMD:C_0603_1608Metric
+      (place C1 25000.000000 -30000.000000 front 0.000000 (PN 10uF))
+    )
+    (component Resistor_SMD:R_0603_1608Metric
+      (place R3 60000.000000 -48000.000000 front 0.000000 (PN 120))
+      (place R1 60000.000000 -12000.000000 front 0.000000 (PN 150))
+      (place R2 60000.000000 -30000.000000 front 0.000000 (PN 120))
+    )
+    (component Button_Switch_SMD:SW_DPDT_CK_JS202011JCQN
+      (place SW3 42000.000000 -48000.000000 front 0.000000 (PN SW_SPDT))
+      (place SW1 42000.000000 -12000.000000 front 0.000000 (PN SW_SPDT))
+      (place SW2 42000.000000 -30000.000000 front 0.000000 (PN SW_SPDT))
+    )
+    (component "LED_SMD:LED_RGB_Wuerth-PLCC4_3.2x2.8mm_150141M173100"
+      (place D1 75000.000000 -30000.000000 front 0.000000 (PN RGB_LED))
+    )
+    (component "Connector_USB:USB_Micro-B_Amphenol_10103594-0001LF_Horizontal"
+      (place J1 10000.000000 -30000.000000 front 0.000000 (PN USB_B_Micro))
+    )
+  )
+  (library
+    (image Capacitor_SMD:C_0603_1608Metric
+      (outline (path signal 120  -140.58 510  140.58 510))
+      (outline (path signal 120  -140.58 -510  140.58 -510))
+      (outline (path signal 50  -1480 730  1480 730))
+      (outline (path signal 50  -1480 -730  -1480 730))
+      (outline (path signal 50  1480 730  1480 -730))
+      (outline (path signal 50  1480 -730  -1480 -730))
+      (outline (path signal 100  -800 400  800 400))
+      (outline (path signal 100  -800 -400  -800 400))
+      (outline (path signal 100  800 400  800 -400))
+      (outline (path signal 100  800 -400  -800 -400))
+      (pin RoundRect[T]Pad_900.000000x950.000000_225.856000_um_0.000000_0 1 -775 0)
+      (pin RoundRect[T]Pad_900.000000x950.000000_225.856000_um_0.000000_0 2 775 0)
+    )
+    (image Resistor_SMD:R_0603_1608Metric
+      (outline (path signal 120  -237.258 522.5  237.258 522.5))
+      (outline (path signal 120  -237.258 -522.5  237.258 -522.5))
+      (outline (path signal 50  -1480 730  1480 730))
+      (outline (path signal 50  -1480 -730  -1480 730))
+      (outline (path signal 50  1480 730  1480 -730))
+      (outline (path signal 50  1480 -730  -1480 -730))
+      (outline (path signal 100  -800 412.5  800 412.5))
+      (outline (path signal 100  -800 -412.5  -800 412.5))
+      (outline (path signal 100  800 412.5  800 -412.5))
+      (outline (path signal 100  800 -412.5  -800 -412.5))
+      (pin RoundRect[T]Pad_800.000000x950.000000_200.761000_um_0.000000_0 1 -825 0)
+      (pin RoundRect[T]Pad_800.000000x950.000000_200.761000_um_0.000000_0 2 825 0)
+    )
+    (image Button_Switch_SMD:SW_DPDT_CK_JS202011JCQN
+      (outline (path signal 120  -4610 1910  -4610 -1910))
+      (outline (path signal 120  -4610 -1910  -3260 -1910))
+      (outline (path signal 120  -3260 1910  -4610 1910))
+      (outline (path signal 120  -760 1910  -1740 1910))
+      (outline (path signal 120  -760 -1910  -1740 -1910))
+      (outline (path signal 120  1740 1910  760 1910))
+      (outline (path signal 120  1740 -1910  760 -1910))
+      (outline (path signal 120  4610 1910  3260 1910))
+      (outline (path signal 120  4610 1910  4610 -1910))
+      (outline (path signal 120  4610 -1910  3260 -1910))
+      (outline (path signal 50  -4750 2250  -4750 -2250))
+      (outline (path signal 50  -4750 2250  4750 2250))
+      (outline (path signal 50  4750 2250  4750 -2250))
+      (outline (path signal 50  4750 -2250  -4750 -2250))
+      (outline (path signal 100  -4500 1800  4500 1800))
+      (outline (path signal 100  -4500 -1800  -4500 1800))
+      (outline (path signal 100  -1750 750  -1750 -750))
+      (outline (path signal 100  -1750 750  1750 750))
+      (outline (path signal 100  -250 750  -250 -750))
+      (outline (path signal 100  1750 750  1750 -750))
+      (outline (path signal 100  1750 -750  -1750 -750))
+      (outline (path signal 100  4500 1800  4500 -1800))
+      (outline (path signal 100  4500 -1800  -4500 -1800))
+      (pin Rect[T]Pad_1000.000000x1600.000000_um 1 -2500 1200)
+      (pin Rect[T]Pad_1000.000000x1600.000000_um 2 0 1200)
+      (pin Rect[T]Pad_1000.000000x1600.000000_um 3 2500 1200)
+      (pin Rect[T]Pad_1000.000000x1600.000000_um 4 -2500 -1200)
+      (pin Rect[T]Pad_1000.000000x1600.000000_um 5 0 -1200)
+      (pin Rect[T]Pad_1000.000000x1600.000000_um 6 2500 -1200)
+    )
+    (image "LED_SMD:LED_RGB_Wuerth-PLCC4_3.2x2.8mm_150141M173100"
+      (outline (path signal 120  -2500 1200  -2100 1600))
+      (outline (path signal 120  -2500 -1600  -2500 1200))
+      (outline (path signal 120  -2500 -1600  2500 -1600))
+      (outline (path signal 120  -2100 1600  2500 1600))
+      (outline (path signal 120  2500 -1600  2500 1600))
+      (outline (path signal 50  -2550 1650  -2550 -1650))
+      (outline (path signal 50  -2550 -1650  2550 -1650))
+      (outline (path signal 50  2550 1650  -2550 1650))
+      (outline (path signal 50  2550 -1650  2550 1650))
+      (outline (path signal 100  -1600 1400  -1600 -1400))
+      (outline (path signal 100  -1600 -1400  1600 -1400))
+      (outline (path signal 100  -600 1400  -1600 400))
+      (outline (path signal 100  1600 1400  -1600 1400))
+      (outline (path signal 100  1600 -1400  1600 1400))
+      (outline (path signal 100  1120 0  1100.93 -205.799  1044.37 -404.591  952.243 -589.604
+            827.69 -754.539  674.951 -893.779  499.227 -1002.58  306.503 -1077.24
+            103.341 -1115.22  -103.341 -1115.22  -306.503 -1077.24  -499.227 -1002.58
+            -674.951 -893.779  -827.69 -754.539  -952.243 -589.604  -1044.37 -404.591
+            -1100.93 -205.799  -1120 0  -1100.93 205.799  -1044.37 404.591
+            -952.243 589.604  -827.69 754.539  -674.951 893.779  -499.227 1002.58
+            -306.503 1077.24  -103.341 1115.22  103.341 1115.22  306.503 1077.24
+            499.227 1002.58  674.951 893.779  827.69 754.539  952.243 589.604
+            1044.37 404.591  1100.93 205.799  1120 0))
+      (pin Rect[T]Pad_1500.000000x900.000000_um 1 1550 700)
+      (pin Rect[T]Pad_1500.000000x900.000000_um 2 1550 -700)
+      (pin Rect[T]Pad_1500.000000x900.000000_um 3 -1550 700)
+      (pin Rect[T]Pad_1500.000000x900.000000_um 4 -1550 -700)
+    )
+    (image "Connector_USB:USB_Micro-B_Amphenol_10103594-0001LF_Horizontal"
+      (outline (path signal 120  -4175 65  -4175 1615))
+      (outline (path signal 120  -4175 65  -3875 65))
+      (outline (path signal 120  -3875 -2735  -3875 65))
+      (outline (path signal 120  -1725 3315  -925 3315))
+      (outline (path signal 120  -1325 2865  -1725 3315))
+      (outline (path signal 120  -925 3315  -1325 2865))
+      (outline (path signal 120  3825 65  4125 65))
+      (outline (path signal 120  3825 -2735  3825 65))
+      (outline (path signal 120  4125 65  4125 1615))
+      (outline (path signal 100  -4025 -2835  3975 -2835))
+      (outline (path signal 50  -4130 2880  -4130 -3580))
+      (outline (path signal 50  -4130 2880  4140 2880))
+      (outline (path signal 50  4140 -3580  -4130 -3580))
+      (outline (path signal 50  4140 -3580  4140 2880))
+      (outline (path signal 120  -3775 865  -2975 1615))
+      (outline (path signal 120  -3775 -3335  -3775 865))
+      (outline (path signal 120  -2975 1615  3725 1615))
+      (outline (path signal 120  3725 1615  3725 -3335))
+      (outline (path signal 120  3725 -3335  -3775 -3335))
+      (pin Rect[T]Pad_1650.000000x400.000000_um (rotate 90) 1 -1325 1765)
+      (pin Rect[T]Pad_1650.000000x400.000000_um (rotate 90) 2 -675 1765)
+      (pin Rect[T]Pad_1650.000000x400.000000_um (rotate 90) 3 -25 1765)
+      (pin Rect[T]Pad_1650.000000x400.000000_um (rotate 90) 4 625 1765)
+      (pin Rect[T]Pad_1650.000000x400.000000_um (rotate 90) 5 1275 1765)
+      (pin Rect[T]Pad_1825.000000x700.000000_um 6 -2975 565)
+      (pin Rect[T]Pad_2000.000000x1500.000000_um 6@1 -2875 1865)
+      (pin Rect[T]Pad_1350.000000x2000.000000_um 6@2 -2755 -185)
+      (pin Oval[A]Pad_1700.000000x1350.000000_um (rotate 90) 6@3 -2755 -1115)
+      (pin Oval[A]Pad_1500.000000x1100.000000_um (rotate 90) 6@4 -2445 1885)
+      (pin Rect[T]Pad_2500.000000x1430.000000_um (rotate 90) 6@5 -985 -1385)
+      (pin Rect[T]Pad_2500.000000x1430.000000_um (rotate 90) 6@6 935 -1385)
+      (pin Oval[A]Pad_1500.000000x1100.000000_um (rotate 90) 6@7 2395 1885)
+      (pin Oval[A]Pad_1700.000000x1350.000000_um (rotate 90) 6@8 2705 -1115)
+      (pin Rect[T]Pad_1350.000000x2000.000000_um 6@9 2725 -185)
+      (pin Rect[T]Pad_2000.000000x1500.000000_um 6@10 2875 1885)
+      (pin Rect[T]Pad_1825.000000x700.000000_um 6@11 2975 565)
+    )
+    (padstack Oval[A]Pad_1500.000000x1100.000000_um
+      (shape (path F.Cu 1100  -200 0  200 0))
+      (shape (path B.Cu 1100  -200 0  200 0))
+      (attach off)
+    )
+    (padstack Oval[A]Pad_1700.000000x1350.000000_um
+      (shape (path F.Cu 1350  -175 0  175 0))
+      (shape (path B.Cu 1350  -175 0  175 0))
+      (attach off)
+    )
+    (padstack RoundRect[T]Pad_800.000000x950.000000_200.761000_um_0.000000_0
+      (shape (polygon F.Cu 0  -400.761 275  -385.479 351.828  -341.959 416.959  -276.828 460.479
+            -199.999 475.76  200 475.761  276.828 460.479  341.959 416.959
+            385.479 351.828  400.76 274.999  400.761 -275  385.479 -351.828
+            341.959 -416.959  276.828 -460.479  199.999 -475.76  -200 -475.761
+            -276.828 -460.479  -341.959 -416.959  -385.479 -351.828  -400.76 -274.999
+            -400.761 275))
+      (attach off)
+    )
+    (padstack RoundRect[T]Pad_900.000000x950.000000_225.856000_um_0.000000_0
+      (shape (polygon F.Cu 0  -450.856 250  -433.664 336.431  -384.704 409.704  -311.431 458.664
+            -225 475.856  225 475.856  311.431 458.664  384.704 409.704
+            433.664 336.431  450.856 250  450.856 -250  433.664 -336.431
+            384.704 -409.704  311.431 -458.664  225 -475.856  -225 -475.856
+            -311.431 -458.664  -384.704 -409.704  -433.664 -336.431  -450.856 -250
+            -450.856 250))
+      (attach off)
+    )
+    (padstack Rect[T]Pad_2000.000000x1500.000000_um
+      (shape (rect F.Cu -1000 -750 1000 750))
+      (attach off)
+    )
+    (padstack Rect[T]Pad_2500.000000x1430.000000_um
+      (shape (rect F.Cu -1250 -715 1250 715))
+      (attach off)
+    )
+    (padstack Rect[T]Pad_1000.000000x1600.000000_um
+      (shape (rect F.Cu -500 -800 500 800))
+      (attach off)
+    )
+    (padstack Rect[T]Pad_1350.000000x2000.000000_um
+      (shape (rect F.Cu -675 -1000 675 1000))
+      (attach off)
+    )
+    (padstack Rect[T]Pad_1500.000000x900.000000_um
+      (shape (rect F.Cu -750 -450 750 450))
+      (attach off)
+    )
+    (padstack Rect[T]Pad_1650.000000x400.000000_um
+      (shape (rect F.Cu -825 -200 825 200))
+      (attach off)
+    )
+    (padstack Rect[T]Pad_1825.000000x700.000000_um
+      (shape (rect F.Cu -912.5 -350 912.5 350))
+      (attach off)
+    )
+    (padstack "Via[0-1]_600:300_um"
+      (shape (circle F.Cu 600))
+      (shape (circle B.Cu 600))
+      (attach off)
+    )
+  )
+  (network
+    (net GND
+      (pins C1-2 D1-4 J1-5 J1-6 J1-6@1 J1-6@2 J1-6@3 J1-6@4 J1-6@5 J1-6@6 J1-6@7 J1-6@8
+        J1-6@9 J1-6@10 J1-6@11)
+    )
+    (net RED_DRV
+      (pins SW1-1 R1-1)
+    )
+    (net LED_R
+      (pins D1-1 R1-2)
+    )
+    (net LED_G
+      (pins D1-2 R2-2)
+    )
+    (net BLUE_DRV
+      (pins R3-1 SW3-1)
+    )
+    (net LED_B
+      (pins R3-2 D1-3)
+    )
+    (net GREEN_DRV
+      (pins SW2-1 R2-1)
+    )
+    (net VBUS
+      (pins C1-1 SW3-2 SW1-2 SW2-2 J1-1)
+    )
+    (class kicad_default BLUE_DRV GND GREEN_DRV LED_B LED_G LED_R RED_DRV
+      VBUS
+      (circuit
+        (use_via "Via[0-1]_600:300_um")
+      )
+      (rule
+        (width 200)
+        (clearance 200)
+      )
+    )
+  )
+  (wiring
+  )
+)
